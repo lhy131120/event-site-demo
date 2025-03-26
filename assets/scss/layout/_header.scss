@@ -1,0 +1,43 @@
+header {
+	.navbar-brand {
+		svg {
+			@media (max-width: 991.98px) {
+				width: 2.5rem;
+				height: 2.5rem;
+			}
+		}
+	}
+	.form-control {
+		padding: 1rem 1.5rem;
+		max-height: 50px;
+		max-width: 285px;
+		&::placeholder {
+			color: #878787;
+			font-size: 1rem;
+		}
+		&:focus {
+			box-shadow: inherit;
+		}
+		@media (max-width: 991.98px) {
+			padding: 0.5rem 0.75rem;
+		}
+	}
+	.search {
+		i {
+			font-size: 1.25rem;
+			transition: all 0.25s ease 0s;
+			@media (max-width: 991.98px) {
+				font-size: 1rem;
+			}
+		}
+		&:is(:hover, :active) {
+			i {
+				font-size: 1.5rem;
+				transition: all 0.25s ease 0s;
+				@media (max-width: 991.98px) {
+					font-size: 1.25rem;
+				}
+			}
+		}
+	}
+}

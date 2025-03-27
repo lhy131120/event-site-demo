@@ -71,3 +71,25 @@
 		background: no-repeat url("../images/rounded-double-right.svg") center / cover;
 	}
 }
+
+.swiper {
+  &-slide {
+    width: auto!important;
+  }
+}
+
+.rotate-2 {
+  transform: rotate(2deg);
+}
+
+.rotate-n2 {
+  transform: rotate(-2deg);
+}
+
+.rotate-4 {
+  transform: translate(-50%, -50%) rotate(4deg)!important;
+}
+
+.rotate-3 {
+  transform: translate(-50%, -50%) rotate(3deg)!important;
+}

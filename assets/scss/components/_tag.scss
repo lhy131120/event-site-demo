@@ -1,0 +1,19 @@
+.tag {
+	border-left: 4px solid $dark !important;
+	transition: all 0.25s ease;
+	&:hover,
+	&.active,
+	&:focus {
+		background-color: $dark;
+		color: $light;
+		&::before {
+			position: absolute;
+			content: "";
+			background-color: $warning;
+			width: 0.25rem;
+			height: calc(100% + 4px);
+			top: -2px;
+			left: -4px;
+		}
+	}
+}

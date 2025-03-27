@@ -55,10 +55,21 @@ $nav-hover-100: #9C9E18;
 @import "bootstrap/scss/utilities/api";
 
 @import './utils/font';
-@import './layout/header.scss';
-@import './layout/footer.scss';
 
-@import './pages/index.scss';
+// Layout
+@import './layout/header';
+@import './layout/footer';
+
+// Page
+@import './pages/index';
+
+// Components
+@import './components/tag';
+@import './components/button';
+
+.row [class^="col"] > a {
+  box-sizing: border-box; /* 邊框計算在寬度內 */
+}
 
 .ratio > * {
   position: relative;

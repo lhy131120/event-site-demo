@@ -21,6 +21,7 @@
     "pnpm": "^10.6.5",
     "sass": "^1.61.0",
     "sass-loader": "^13.2.2",
+    "swiper": "^11.2.6",
     "vite-plugin-live-reload": "^3.0.2",
     "web-layout-training-vite": "file:"
   }

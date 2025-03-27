@@ -1905,6 +1905,7 @@ snapshots:
       pnpm: 10.6.5
       sass: 1.86.0
       sass-loader: 13.3.3(sass@1.86.0)(webpack@5.98.0)
+      swiper: 11.2.6
       vite-plugin-live-reload: 3.0.4(vite@4.5.10(@types/node@22.13.13)(sass@1.86.0)(terser@5.39.0))
     transitivePeerDependencies:
       - '@popperjs/core'

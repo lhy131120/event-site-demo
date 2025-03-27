@@ -428,6 +428,7 @@ $spacers: (
 	// 48
 	12: $spacer * 3.75,
 	// 60
+	70: $spacer * 4.375,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -466,7 +467,7 @@ $body-emphasis-color: $black !default;
 $link-color: $primary !default;
 $link-decoration: none !default; //underline !default;
 $link-shade-percentage: 20% !default;
-$link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color: #9C9E18!default; //shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration: null !default;
 
 $stretched-link-pseudo-element: after !default;
@@ -1204,7 +1205,7 @@ $nav-underline-link-active-color: var(--#{$prefix}emphasis-color) !default;
 $navbar-padding-y: $spacer * 0.5 !default;
 $navbar-padding-x: null !default;
 
-$navbar-nav-link-padding-x: 0.5rem !default;
+$navbar-nav-link-padding-x: .75rem!default; //0.5rem !default;
 
 $navbar-brand-font-size: $font-size-lg !default;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link

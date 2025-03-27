@@ -5,6 +5,7 @@
 	background-color: $dark;
 	color: $light;
   line-height: 1.25!important;
+	border: 2px solid $dark;
 	transition: all 0.25s ease;
 	&:hover,
 	&.active,

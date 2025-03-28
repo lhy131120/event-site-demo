@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Event</title>
+    <link rel="stylesheet" href="../assets/icofont/icofont.min.css" />
+	</head>
+	<body>
+		<%- include('./layout/header'); -%>
+
+		<main class="py-5 py-lg-8">
+			<div class="container">
+				<div
+					class="d-flex justify-content-between align-items-center mb-3 mb-lg-8 py-5 py-lg-7 px-3 px-lg-8 border border-3 border-primary"
+				>
+					<h2 class="text-uppercase fs-24 fs-lg-64 fw-bold lh-1">event</h2>
+					<h3 class="fs-16 fs-lg-32 lh-1">所有活動</h3>
+				</div>
+
+				<ul class="tag-list list-unstyled d-flex serif flex-wrap gap-2 mb-8">
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">演出</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">音樂</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">舞蹈</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">戲劇</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">音樂會</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">課程講座</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">社群活動</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">展覽</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">研討會</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">電郵</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">電音派對</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">遊戲競賽</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">親子</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">藝文活動</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">運動</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">交通旅遊</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">美食</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">資訊科技</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">聯誼</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">戶外</p>
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="checkbox" class="tag-checkbox" />
+							<p class="tag-item btn btn-outline-black py-1 px-4 px-md-6 rounded-0">線上活動</p>
+						</label>
+					</li>
+				</ul>
+
+				<div class="row row-cols-1 row-cols-lg-3 g-7 gx-lg-7 gy-lg-11 mb-8 mb-lg-12">
+					<div class="col">
+						<div class="card h-100">
+							<div class="fs-32 fs-lg-48 pb-2 pb-lg-3 mb-5 mb-lg-3 border-3 border-bottom border-primary lh-1">
+								19 MAY 2025
+							</div>
+							<img
+								src="../assets/images/event/01.jpg"
+								class="card-img-top mh-210p mh-lg-255p h-100 object-fit-cover"
+								alt=""
+							/>
+							<div class="card-body pt-2 pt-lg-3 pb-5">
+								<div class="card-title fs-18 fs-lg-24 fw-bold">邪典電影派對——房間</div>
+								<p class="card-text line-clamp line-clamp-3">
+									你有聽說過「大災難家」裡面的主角 Tommy Wiseau
+									製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟湯匙都...
+								</p>
+							</div>
+							<div
+								class="d-flex justify-content-between align-items-center py-2 py-lg-3 border border-2 border-primary border-start-0 border-end-0"
+							>
+								<a href="#" class="card-footer-index position-relative fw-bold">社群活動</a>
+								<a href="./eventdetails.html" class="card-footer-details position-relative fw-bold d-flex align-items-center">開賣中</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100">
+							<div class="fs-32 fs-lg-48 pb-2 pb-lg-3 mb-5 mb-lg-3 border-3 border-bottom border-primary lh-1">
+								23 MAY 2023
+							</div>
+							<img
+								src="../assets/images/event/02.jpg"
+								class="card-img-top mh-210p mh-lg-255p h-100 object-fit-cover"
+								alt=""
+							/>
+							<div class="card-body pt-2 pt-lg-3 pb-5">
+								<div class="card-title fs-18 fs-lg-24 fw-bold">怪舞俱樂部</div>
+								<p class="card-text line-clamp line-clamp-3">
+									覺得自己的舞蹈細胞異於常人？每次隨著音樂起舞身邊的人總是露出無法理解的表情？來這裡就對了！來參加這場一起跳舞的聚會，也會在每一次的舞會中選出舞步最怪的
+								</p>
+							</div>
+							<div
+								class="d-flex justify-content-between align-items-center py-2 py-lg-3 border border-2 border-primary border-start-0 border-end-0"
+							>
+								<a href="#" class="card-footer-index position-relative fw-bold">演出</a>
+								<a href="#" class="card-footer-details position-relative fw-bold d-flex align-items-center">檢視活動</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100">
+							<div class="fs-32 fs-lg-48 pb-2 pb-lg-3 mb-5 mb-lg-3 border-3 border-bottom border-primary lh-1">
+								30 MAY 2023
+							</div>
+							<img
+								src="../assets/images/event/03.jpg"
+								class="card-img-top mh-210p mh-lg-255p h-100 object-fit-cover"
+								alt=""
+							/>
+							<div class="card-body pt-2 pt-lg-3 pb-5">
+								<div class="card-title fs-18 fs-lg-24 fw-bold">哈利波特馬拉松</div>
+								<p class="card-text line-clamp line-clamp-3">
+									每次身邊有人開啟哈利波特的話題，自己永遠都是聽不懂的那個麻瓜？看大家在討論魁地奇、用咒語鬥法的時候，自己永遠是陪笑的那個人？穿好你的法袍、帶上你的法杖
+								</p>
+							</div>
+							<div
+								class="d-flex justify-content-between align-items-center py-2 py-lg-3 border border-2 border-primary border-start-0 border-end-0"
+							>
+								<a href="#" class="card-footer-index position-relative fw-bold">聯誼</a>
+								<a href="#" class="card-footer-details position-relative fw-bold d-flex align-items-center">開賣中</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100">
+							<div class="fs-32 fs-lg-48 pb-2 pb-lg-3 mb-5 mb-lg-3 border-3 border-bottom border-primary lh-1">
+								12 June 2023
+							</div>
+							<img
+								src="../assets/images/event/04.jpg"
+								class="card-img-top mh-210p mh-lg-255p h-100 object-fit-cover"
+								alt=""
+							/>
+							<div class="card-body pt-2 pt-lg-3 pb-5">
+								<div class="card-title fs-18 fs-lg-24 fw-bold">皮卡丘排球大賽</div>
+								<p class="card-text line-clamp line-clamp-3">
+									還記得小時候玩的小遊戲嗎？總是有朋友吹噓自己獨孤求敗、只求一敗？是時候該展現真正的實力了！本活動採用瑞士制賽程，以絕對公平的方式進行，是時候該證明自己
+								</p>
+							</div>
+							<div
+								class="d-flex justify-content-between align-items-center py-2 py-lg-3 border border-2 border-primary border-start-0 border-end-0"
+							>
+								<a href="#" class="card-footer-index position-relative fw-bold">遊戲競賽</a>
+								<a href="#" class="card-footer-details position-relative fw-bold d-flex align-items-center">開賣中</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100">
+							<div class="fs-32 fs-lg-48 pb-2 pb-lg-3 mb-5 mb-lg-3 border-3 border-bottom border-primary lh-1">
+								25 June 2025
+							</div>
+							<img
+								src="../assets/images/event/05.jpg"
+								class="card-img-top mh-210p mh-lg-255p h-100 object-fit-cover"
+								alt=""
+							/>
+							<div class="card-body pt-2 pt-lg-3 pb-5">
+								<div class="card-title fs-18 fs-lg-24 fw-bold">酒精路跑</div>
+								<p class="card-text line-clamp line-clamp-3">
+									身邊總是有對自己酒量有高度自信的朋友嗎？拉著他/她一起來參加酒精路跑吧！一起拍下第一杯直到倒下為止的照片，一起喝遍市區內各家極具品味的酒吧。
+								</p>
+							</div>
+							<div
+								class="d-flex justify-content-between align-items-center py-2 py-lg-3 border border-2 border-primary border-start-0 border-end-0"
+							>
+								<a href="#" class="card-footer-index position-relative fw-bold">社群活動</a>
+								<a href="#" class="card-footer-details position-relative fw-bold d-flex align-items-center">開賣中</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100">
+							<div class="fs-32 fs-lg-48 pb-2 pb-lg-3 mb-5 mb-lg-3 border-3 border-bottom border-primary lh-1">
+								9 July 2025
+							</div>
+							<img
+								src="../assets/images/event/06.jpg"
+								class="card-img-top mh-210p mh-lg-255p h-100 object-fit-cover"
+								alt=""
+							/>
+							<div class="card-body pt-2 pt-lg-3 pb-5">
+								<div class="card-title fs-18 fs-lg-24 fw-bold">展覽——我的房間</div>
+								<p class="card-text line-clamp line-clamp-3">
+									每個人的房間總會有那麼一兩個能代表自己的物事，或許是再平凡不過的牙刷、馬克杯，或許有那些別人的房間從沒出現過的小東西——那些能定義自己的特別的東西。
+								</p>
+							</div>
+							<div
+								class="d-flex justify-content-between align-items-center py-2 py-lg-3 border border-2 border-primary border-start-0 border-end-0"
+							>
+								<a href="#" class="card-footer-index position-relative fw-bold">展覽</a>
+								<a href="#" class="card-footer-details position-relative fw-bold d-flex align-items-center">開賣中</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card h-100">
+							<div class="fs-32 fs-lg-48 pb-2 pb-lg-3 mb-5 mb-lg-3 border-3 border-bottom border-primary lh-1">
+								19 MAY 2025
+							</div>
+							<img
+								src="../assets/images/event/07.jpg"
+								class="card-img-top mh-210p mh-lg-255p h-100 object-fit-cover"
+								alt=""
+							/>
+							<div class="card-body pt-2 pt-lg-3 pb-5">
+								<div class="card-title fs-18 fs-lg-24 fw-bold">野營音樂祭</div>
+								<p class="card-text line-clamp line-clamp-3">
+									喜歡山水、喜歡音樂嗎？一起在溪邊來場浪漫的沉浸式森林活動吧！結合四大戶外探索類別、超過 15
+									項體驗與工作坊、新興音樂人的草地演唱。
+								</p>
+							</div>
+							<div
+								class="d-flex justify-content-between align-items-center py-2 py-lg-3 border border-2 border-primary border-start-0 border-end-0"
+							>
+								<a href="#" class="card-footer-index position-relative fw-bold">演出</a>
+								<a href="#" class="card-footer-details position-relative fw-bold d-flex align-items-center">開賣中</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card h-100">
+							<div class="fs-32 fs-lg-48 pb-2 pb-lg-3 mb-5 mb-lg-3 border-3 border-bottom border-primary lh-1">
+								19 MAY 2025
+							</div>
+							<img
+								src="../assets/images/event/08.jpg"
+								class="card-img-top mh-210p mh-lg-255p h-100 object-fit-cover"
+								alt=""
+							/>
+							<div class="card-body pt-2 pt-lg-3 pb-5">
+								<div class="card-title fs-18 fs-lg-24 fw-bold">疊疊樂大賽</div>
+								<p class="card-text line-clamp line-clamp-3">
+									來到七星潭會想到什麼呢？絕對是數也數不清的扁扁石頭吧！有這項技能卻沒有機會大展身手的你，展露頭角的機會來囉！
+								</p>
+							</div>
+							<div
+								class="d-flex justify-content-between align-items-center py-2 py-lg-3 border border-2 border-primary border-start-0 border-end-0"
+							>
+								<a href="#" class="card-footer-index position-relative fw-bold">遊戲競賽</a>
+								<a href="#" class="card-footer-details position-relative fw-bold d-flex align-items-center">開賣中</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card h-100">
+							<div class="fs-32 fs-lg-48 pb-2 pb-lg-3 mb-5 mb-lg-3 border-3 border-bottom border-primary lh-1">
+								19 MAY 2025
+							</div>
+							<img
+								src="../assets/images/event/09.jpg"
+								class="card-img-top mh-210p mh-lg-255p h-100 object-fit-cover"
+								alt=""
+							/>
+							<div class="card-body pt-2 pt-lg-3 pb-5">
+								<div class="card-title fs-18 fs-lg-24 fw-bold">返老還童-制服聯誼</div>
+								<p class="card-text line-clamp line-clamp-3">
+									由戀愛家教「艾德溫」主辦策劃，讓各位在安排好的青春行程中擁有自然的純愛互動體驗，互相餵食餅乾、觀察對方手相，有趣的互動環節讓你/妳怦然心動！
+								</p>
+							</div>
+							<div
+								class="d-flex justify-content-between align-items-center py-2 py-lg-3 border border-2 border-primary border-start-0 border-end-0"
+							>
+								<a href="#" class="card-footer-index position-relative fw-bold">聯誼</a>
+								<a href="#" class="card-footer-details position-relative fw-bold d-flex align-items-center">檢視活動</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card h-100">
+							<div class="fs-32 fs-lg-48 pb-2 pb-lg-3 mb-5 mb-lg-3 border-3 border-bottom border-primary lh-1">
+								19 MAY 2025
+							</div>
+							<img
+								src="../assets/images/event/10.jpg"
+								class="card-img-top mh-210p mh-lg-255p h-100 object-fit-cover"
+								alt=""
+							/>
+							<div class="card-body pt-2 pt-lg-3 pb-5">
+								<div class="card-title fs-18 fs-lg-24 fw-bold">野外求生17天</div>
+								<p class="card-text line-clamp line-clamp-3">
+									野外求生體驗，我們將在沒有水、沒有電的自然環境裡，學習各項生存技能，課程內容包含生火、水源取得及淨化、射箭、木食器製作、無具野炊、野地編繩和狩獵技能
+								</p>
+							</div>
+							<div
+								class="d-flex justify-content-between align-items-center py-2 py-lg-3 border border-2 border-primary border-start-0 border-end-0"
+							>
+								<a href="#" class="card-footer-index position-relative fw-bold">戶外</a>
+								<a href="#" class="card-footer-details position-relative fw-bold d-flex align-items-center">開賣中</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card h-100">
+							<div class="fs-32 fs-lg-48 pb-2 pb-lg-3 mb-5 mb-lg-3 border-3 border-bottom border-primary lh-1">
+								19 MAY 2025
+							</div>
+							<img
+								src="../assets/images/event/11.jpg"
+								class="card-img-top mh-210p mh-lg-255p h-100 object-fit-cover"
+								alt=""
+							/>
+							<div class="card-body pt-2 pt-lg-3 pb-5">
+								<div class="card-title fs-18 fs-lg-24 fw-bold">耳熟能詳音樂祭</div>
+								<p class="card-text line-clamp line-clamp-3">
+									對你來說聽都沒聽過的團，但是音樂一下保證跟著唱，重磅邀請各界隱藏天籟歌手、天團，不想曬太陽也可以在樹下當
+									KTV 跟著唱，唱不出來服務台報到立馬退費！
+								</p>
+							</div>
+							<div
+								class="d-flex justify-content-between align-items-center py-2 py-lg-3 border border-2 border-primary border-start-0 border-end-0"
+							>
+								<a href="#" class="card-footer-index position-relative fw-bold">演出</a>
+								<a href="#" class="card-footer-details position-relative fw-bold d-flex align-items-center">開賣中</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card h-100">
+							<div class="fs-32 fs-lg-48 pb-2 pb-lg-3 mb-5 mb-lg-3 border-3 border-bottom border-primary lh-1">
+								19 MAY 2025
+							</div>
+							<img
+								src="../assets/images/event/12.jpg"
+								class="card-img-top mh-210p mh-lg-255p h-100 object-fit-cover"
+								alt=""
+							/>
+							<div class="card-body pt-2 pt-lg-3 pb-5">
+								<div class="card-title fs-18 fs-lg-24 fw-bold">野營發呆大賽</div>
+								<p class="card-text line-clamp line-clamp-3">
+									你也是那種動不動就容易放空、神遊的人嗎？這輩子靠這技能出頭的機會來了，在恆春山林一起神遊、盡情地發呆吧！冠軍可以得到價值十萬的綿豆腐床墊一張！
+								</p>
+							</div>
+							<div
+								class="d-flex justify-content-between align-items-center py-2 py-lg-3 border border-2 border-primary border-start-0 border-end-0"
+							>
+								<a href="#" class="card-footer-index position-relative fw-bold">遊戲競賽</a>
+								<a href="#" class="card-footer-details position-relative fw-bold d-flex align-items-center">開賣中</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+        <nav class="d-flex justify-content-center px-5" aria-label="">
+          <ul class="pagination gap-2">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <i class="icofont-arrow-left"></i>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <i class="icofont-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+			</div>
+		</main>
+
+		<%- include('./layout/footer'); -%>
+
+		<script type="module" src="../main.js"></script>
+	</body>
+</html>

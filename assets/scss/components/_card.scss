@@ -1,0 +1,76 @@
+.card-footer-index {
+	padding-left: 28px;
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 1.5rem;
+		height: 1.5rem;
+		top: 0;
+		left: 0;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 1.5rem 1.5rem;
+		background-image: url("../images/sparkler.png");
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 0;
+		height: 2px;
+		background: $primary;
+		bottom: 0;
+		left: 28px;
+		transition: width 0.25s ease 0s;
+	}
+	&:hover {
+		color: $nav-hover-100;
+		&:after {
+			width: calc(100% - 28px);
+		}
+	}
+}
+
+.card-footer-details {
+	padding-right: 20px;
+  &:hover {
+    color: $dark;
+  }
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 1.875rem;
+		height: 1.875rem;
+		box-shadow: transparent;
+		border-radius: 50%;
+		z-index: -1;
+		inset: -2px 0 0 -13px;
+		transform: translateX(-10px);
+		transition: all 0.25s ease 0s;
+	}
+	&:hover:before {
+		background: $yellow-100;
+		transform: translateX(0);
+	}
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		right: 0;
+		width: 1rem;
+		height: 1rem;
+		background: no-repeat url("../images/rounded-double-right.svg") center / cover;
+	}
+}
+
+.line-clamp {
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+  &-3 {
+    -webkit-line-clamp: 3;
+  }
+}

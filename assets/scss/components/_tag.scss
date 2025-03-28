@@ -17,3 +17,41 @@
 		}
 	}
 }
+
+.btn-outline-black {
+  border-color: $dark;
+}
+
+.tag-checkbox {
+  // 隱藏 checkbox
+  display: none;
+}
+
+.tag-list {
+  .tag-item {
+    position: relative;
+    border-left: 4px solid $dark;
+  }
+  .tag-item:focus {
+    // 移除 Bootstrap 預設的按鈕 focus 邊框
+    box-shadow: none;
+  }
+  // 當 .tag-item 被 hover 的時候 .tag-item 加入以下樣式
+  .tag-item:hover,
+   // 當 .tag-item 同層有 .active 的時候 .tag-item 加入以下樣式
+  .tag-item.active,
+     // 當 .tag-checkbox 狀態是 checked 的時候，同階層的 .tag-item 加入以下樣式
+  .tag-checkbox:checked + .tag-item {
+    background-color: $primary;
+    color: $white;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 4px;
+      background-color: $warning;
+      height: calc(100% + 4px);
+      top: -2px;
+      left: -4px;
+    }
+  }
+}

@@ -62,14 +62,14 @@ $nav-hover-100: #9C9E18;
 
 // Page
 @import './pages/index';
+@import './pages/event-details';
 
 // Components
+@import "./components/card";
+@import "./components/pagination";
 @import './components/tag';
 @import './components/button';
 
-.nav-link:hover, .nav-link:focus {
-  color: #9C9E18;
-}
 .row [class^="col"] > a {
   box-sizing: border-box; /* 邊框計算在寬度內 */
 }

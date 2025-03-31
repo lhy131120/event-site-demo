@@ -27,3 +27,14 @@
     transition: all 0.25s ease;
 	}
 }
+
+.tableButton {
+  background: transparent;
+  transition: all .25s ease;
+  &:hover, &.active, &:focus {
+    background-color: $primary;
+    span {
+      color: $warning!important;
+    }
+  }
+}

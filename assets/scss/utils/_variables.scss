@@ -639,6 +639,7 @@ $font-weight-bolder: bolder !default;
 $font-weight-base: $font-weight-normal !default;
 
 $line-height-base: 1.5 !default;
+$line-height-xs: 1.125 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
@@ -652,9 +653,9 @@ $h6-font-size: $font-size-base !default;         // 16
 
 // scss-docs-start font-sizes
 $font-sizes: (
-	1: $font-size-base * 4,   
-	2: $font-size-base * 3.75,
-	3: $font-size-base * 3,
+	1: $font-size-base * 4,      // 64
+	2: $font-size-base * 3.75,   // 60
+	3: $font-size-base * 3,      // 48
   14: $font-size-base * 0.875,
   16: $font-size-base,
   18: $font-size-base * 1.125,
@@ -662,8 +663,9 @@ $font-sizes: (
   22: $font-size-base * 1.375,
   24: $font-size-base * 1.5,
   32: $font-size-base * 2,
-  48: $font-size-base * 3,
-  64: $font-size-base * 4,
+  50: $font-size-base * 3.125,
+  80: $font-size-base * 5,
+  100: $font-size-base * 6.25,
 ) !default;
 // scss-docs-end font-sizes
 
@@ -772,7 +774,7 @@ $table-hover-bg: rgba(var(--#{$prefix}emphasis-color-rgb), $table-hover-bg-facto
 
 $table-border-factor: 0.2 !default;
 $table-border-width: var(--#{$prefix}border-width) !default;
-$table-border-color: var(--#{$prefix}border-color) !default;
+$table-border-color: $primary!default;//var(--#{$prefix}border-color) !default;
 
 $table-striped-order: odd !default;
 $table-striped-columns-order: even !default;

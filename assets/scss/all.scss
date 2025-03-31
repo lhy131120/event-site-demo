@@ -69,6 +69,7 @@ $nav-hover-100: #9C9E18;
 @import "./components/pagination";
 @import './components/tag';
 @import './components/button';
+@import './components/paymentBar';
 
 .row [class^="col"] > a {
   box-sizing: border-box; /* 邊框計算在寬度內 */

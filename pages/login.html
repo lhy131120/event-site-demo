@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+		<link rel="stylesheet" href="../assets/icofont/icofont.min.css" />
+	</head>
+	<body class="min-vh-100 position-relative d-flex align-items-center justify-content-center flex-column">
+		<div class="position-absolute w-100 start-0 top-0"><%- include('./layout/header'); -%></div>
+
+		<main class="w-100">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-4">
+						<form class="" action="">
+							<div class="mb-5 text-center">
+								<img class="w-32 h-32 object-fit-cover" src="../assets/images/sparkler.png" alt="" />
+							</div>
+							<h2 class="text-center mb-5">會員登入</h2>
+							<div class="mb-5">
+								<label for="loginId" class="form-label">帳號</label>
+								<input
+									type="email"
+									class="form-control"
+									id="loginId"
+									aria-describedby="請輸入帳號"
+									placeholder="請輸入帳號"
+								/>
+							</div>
+							<div class="mb-8">
+								<label for="loginPassword" class="form-label">密碼</label>
+								<input
+									type="password"
+									class="form-control"
+									id="loginPassword"
+									aria-describedby="請輸入密碼"
+									placeholder="請輸入密碼"
+								/>
+							</div>
+              <button class="button fw-bold fs-16 fs-lg-20 w-100 p-5 py-lg-2 noto-tc-sans">
+                登入<span
+                  class="icon arrow-right ms-1 w-16 h-16 w-lg-20 h-lg-20"
+                  >Go</span
+                >
+              </button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<div class="position-absolute w-100 bottom-0 start-0"><%- include('./layout/footer'); -%></div>
+
+		<script type="module" src="../main.js"></script>
+	</body>
+</html>

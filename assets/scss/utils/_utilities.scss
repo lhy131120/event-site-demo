@@ -225,6 +225,7 @@ $utilities: map-merge(
           20: 20px,
           32: 32px,
           40: 40px,
+          48: 48px,
 					55: 55px,
           80: 80px,
 				),
@@ -237,6 +238,7 @@ $utilities: map-merge(
 				100: 100%,
         40p: 40px,
         80p: 80px,
+        112p: 112px,
         207p: 207px,
 			),
 		),
@@ -274,6 +276,8 @@ $utilities: map-merge(
         16: 16px,
         20: 20px,
         32: 32px,
+        40: 40px,
+        48: 48px,
 				55: 55px,
 			),
 		),
@@ -651,6 +655,7 @@ $utilities: map-merge(
 			values: (
 				0: 0,
 				1: 1,
+        xs: $line-height-xs,
 				sm: $line-height-sm,
 				base: $line-height-base,
 				lg: $line-height-lg,
@@ -943,6 +948,14 @@ $utilities: map-merge(
         class: aspect,
         values:(
           1: 1
+        )
+      ),
+      "letter-spacing":
+      (
+        property: letter-spacing,
+        class: letter,
+        values: (
+          5: 5%,
         )
       ),
 	),

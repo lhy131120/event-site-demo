@@ -15,22 +15,83 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6 mx-auto">
-              <ol class="paymentBar position-relative list-unstyled d-flex justify-content-between mb-7 mb-lg-11">
-                <li class="d-flex flex-column align-items-center active">
-                  <span class="number d-flex justify-content-center align-items-center fs-16 fs-lg-20 lh-lg-sm  w-48 h-48 border border-1 border-primary mb-1 mb-lg-2">1</span>
-                  <span class="fw-bold mb-0">訂單確認</span>
-                </li>
-                <li class="d-flex flex-column align-items-center">
-                  <span class="number d-flex justify-content-center align-items-center fs-16 fs-lg-20 lh-lg-sm  w-48 h-48 border border-1 border-primary mb-1 mb-lg-2">2</span>
-                  <span class="fw-bold mb-0">結帳付款</span>
-                </li>
-                <li class="d-flex flex-column align-items-center">
-                  <span class="number d-flex justify-content-center align-items-center fs-16 fs-lg-20 lh-lg-sm  w-48 h-48 border border-1 border-primary mb-1 mb-lg-2">3</span>
-                  <span class="fw-bold mb-0">訂購結果</span>
-                </li>
-              </ol>
-              <h2 class="fw-bold fs-lg-3 fs-32 mb-7 mb-lg-8 letter-5">返老還童-制服聯誼</h2>
-            </div>
+							<ol class="paymentBar position-relative list-unstyled d-flex justify-content-between mb-7 mb-lg-11">
+								<li class="d-flex flex-column align-items-center active">
+									<span
+										class="number d-flex justify-content-center align-items-center fs-16 fs-lg-20 lh-lg-sm w-48 h-48 border border-1 border-primary mb-1 mb-lg-2"
+										>1</span
+									>
+									<span class="fw-bold mb-0">訂單確認</span>
+								</li>
+								<li class="d-flex flex-column align-items-center">
+									<span
+										class="number d-flex justify-content-center align-items-center fs-16 fs-lg-20 lh-lg-sm w-48 h-48 border border-1 border-primary mb-1 mb-lg-2"
+										>2</span
+									>
+									<span class="fw-bold mb-0">結帳付款</span>
+								</li>
+								<li class="d-flex flex-column align-items-center">
+									<span
+										class="number d-flex justify-content-center align-items-center fs-16 fs-lg-20 lh-lg-sm w-48 h-48 border border-1 border-primary mb-1 mb-lg-2"
+										>3</span
+									>
+									<span class="fw-bold mb-0">訂購結果</span>
+								</li>
+							</ol>
+							<h2 class="fw-bold fs-lg-3 fs-32 mb-7 mb-lg-8 letter-5 text-center">返老還童-制服聯誼</h2>
+              <div class="table-respinsive mb-8 mb-lg-11">
+                <table class="table align-middle">
+                  <thead class="d-none">
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody class="border-2 border-end-0 border-start-0 border-bottom-0">
+                    <tr>
+                      <th scope="row" class="fw-bold text-dark">日期</th>
+                      <td class="text-end noto-tc-sans">2023/5/12</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="fw-bold text-dark">票種</th>
+                      <td class="text-end noto-tc-sans">改頭換面票（含大改造）</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="fw-bold text-dark">票價</th>
+                      <td class="text-end noto-tc-sans">@$8000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <form action="">
+                <div class="text-center mb-5">
+                  <img src="../assets/images/sparkler.png" class="d-block w-32 h-32 img-fluid mb-5 mx-auto" alt="">
+                  <h3 class="fw-bold fs-24 letter-5">聯絡人資料</h3>
+                </div>
+                <div class="mb-3">
+                  <label for="name" class="form-label text-dark lh-1 noto-tc-sans">聯絡人姓名</label>
+                  <input type="text" class="form-control border-2" id="name" aria-describedby="請輸入聯絡人名稱" placeholder="請輸入聯絡人名稱">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label text-dark lh-1 noto-tc-sans">Email</label>
+                  <input type="email" class="form-control border-2" id="email" aria-describedby="請輸入Email" placeholder="請輸入Email">
+                </div>
+                <div class="mb-8">
+                  <label for="tel" class="form-label text-dark lh-1 noto-tc-sans">聯絡人姓名</label>
+                  <input type="tel" class="form-control border-2" id="tel" aria-describedby="請輸入手機號碼" placeholder="請輸入手機號碼">
+                </div>
+                <div class="mb-5">
+                  <a href="./payment-step2.html" class="button fw-bold fs-16 fs-lg-20 w-100 mw-lg-416p p-5 py-lg-2 mx-auto">
+                      確認表單資料<span class="icon arrow-right ms-1 w-16 h-16 w-lg-20 h-lg-20 border-start-0 border-end-0"
+                        >Go</span
+                      >
+                    </a>
+                </div>
+                <div class="text-center">
+                  <a href="javascript:;" class="text-center">取消購票</a>
+                </div>
+              </form>
+						</div>
 					</div>
 				</div>
 			</div>

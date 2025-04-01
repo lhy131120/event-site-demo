@@ -3,11 +3,10 @@ import "swiper/css/bundle";
 import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 
-
 document.addEventListener("DOMContentLoaded", () => {
-	const swipers = document.querySelectorAll(".albums .swiper");
+	const albumSwipers = document.querySelectorAll(".albums .swiper");
 
-	swipers.forEach((swiper) => {
+	albumSwipers.forEach((swiper) => {
 		const baseConfig = {
 			allowTouchMove: false,
 			slidesPerView: "auto",
@@ -28,20 +27,57 @@ document.addEventListener("DOMContentLoaded", () => {
 						...baseConfig.autoplay,
 						reverseDirection: true,
 					},
-        }
+			  }
 			: baseConfig;
 
 		new Swiper(swiper, finalConfig);
 	});
-	// const swiper = new Swiper(albumsSwiper, {
-	// 	allowTouchMove: false,
-	// 	slidesPerView: "auto",
-	// 	speed: 15000,
-	// 	loop: true,
-	// 	autoplay: {
-	// 		delay: 0,
-	// 		disableOnInteraction: false,
-	// 	},
-	// 	centeredSlides: true,
-	// });
+
+	if (!!document.querySelector(".heros .swiper")) {
+		const heroSwiper = new Swiper(".heros .swiper", {
+			effect: "fade",
+			loop: true,
+			fadeEffect: {
+				crossFade: true,
+			},
+			// autoplay: {
+			// 	delay: 5000,
+			// 	disableOnInteraction: false,
+			// },
+			navigation: {
+				nextEl: ".heros .swiper-button-next",
+				prevEl: ".heros .swiper-button-prev",
+			},
+		});
+
+		function addActiveClass() {
+			document.querySelectorAll(".swiper-slide h2, .swiper-slide h3, .swiper-slide p").forEach((elment) => {
+				elment.classList.remove("active");
+			});
+
+			const activeSlide = heroSwiper.slides[heroSwiper.activeIndex];
+
+			const elements = [
+				activeSlide.querySelector("h2"),
+				activeSlide.querySelector("h3"),
+				activeSlide.querySelector("p"),
+			];
+
+			const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+			elements.reduce((promise, element) => {
+				return promise.then(() => {
+					if (element) {
+						element.classList.add("active");
+					}
+					return delay(300);
+				});
+			}, Promise.resolve());
+		}
+
+		addActiveClass();
+		heroSwiper.on("slideChangeTransitionEnd", () => {
+			setTimeout(addActiveClass, 100);
+		});
+	}
 });

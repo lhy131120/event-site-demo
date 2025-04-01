@@ -1,21 +1,103 @@
-.swiper {
-  &-slide {
-    width: auto!important;
-  }
+
+
+.heros {
+	.swiper {
+		aspect-ratio: 1296 / 518;
+		@media (max-width: 991.98px) {
+			aspect-ratio: 4 /3;
+		}
+		@media (max-width: 574.98px) {
+			aspect-ratio: 1;
+		}
+    &-slide {
+      width: inherit!important;
+    }
+    button {
+      border: 0;
+      top: 0;
+      height: 100%;
+      width: 110px;
+      margin: 0;
+      padding: 0;
+      background-color: rgba($color: #ffffff, $alpha: 0);
+      transition: all 0.3 ease;
+      &:hover{
+        background-color: rgba($color: #ffffff, $alpha: 0.1);
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="%23cccccc"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 32px;
+        height: 32px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &.swiper-button-next {
+        right: 0;
+      }
+      &.swiper-button-prev {
+        left: 0;
+        &:before {
+          background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="%23cccccc"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>');
+        }
+      }
+      &:after {
+        content: none!important;
+      }
+    }
+	}
+	.hero {
+    h2, h3, p {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all .3s ease 0s;
+      &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+    position: relative;
+		width: 100%;
+		height: 100%;
+    &:before {
+      position: absolute;
+      content: "";
+      inset:  auto;
+      width: 100%;
+      height: 100%;
+      background: rgba($color: #000000, $alpha: 0.375);
+    }
+		img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+		}
+	}
 }
 
 .rotate-2 {
-  transform: rotate(2deg);
+	transform: rotate(2deg);
 }
 
 .rotate-n2 {
-  transform: rotate(-2deg);
+	transform: rotate(-2deg);
 }
 
 .rotate-4 {
-  transform: translate(-50%, -50%) rotate(4deg)!important;
+	transform: translate(-50%, -50%) rotate(4deg) !important;
 }
 
 .rotate-3 {
-  transform: translate(-50%, -50%) rotate(3deg)!important;
+	transform: translate(-50%, -50%) rotate(3deg) !important;
+}
+
+.albums .swiper-slide {
+  width: auto;
 }

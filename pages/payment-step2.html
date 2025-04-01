@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Payment</title>
+		<link rel="stylesheet" href="../assets/icofont/icofont.min.css" />
+	</head>
+	<body>
+		<%- include('./layout/header'); -%>
+
+		<main>
+			<div class="pt-7 pb-11 py-lg-12">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 mx-auto">
+							<ol class="paymentBar position-relative list-unstyled d-flex justify-content-between mb-7 mb-lg-11">
+								<li class="d-flex flex-column align-items-center active">
+									<span
+										class="number d-flex justify-content-center align-items-center fs-16 fs-lg-20 lh-lg-sm w-48 h-48 border border-1 border-primary mb-1 mb-lg-2"
+										><i class="icofont-verification-check"></i></span
+									>
+									<span class="fw-bold mb-0">訂單確認</span>
+								</li>
+								<li class="d-flex flex-column align-items-center active">
+									<span
+										class="number d-flex justify-content-center align-items-center fs-16 fs-lg-20 lh-lg-sm w-48 h-48 border border-1 border-primary mb-1 mb-lg-2"
+										>2</span
+									>
+									<span class="fw-bold mb-0">結帳付款</span>
+								</li>
+								<li class="d-flex flex-column align-items-center">
+									<span
+										class="number d-flex justify-content-center align-items-center fs-16 fs-lg-20 lh-lg-sm w-48 h-48 border border-1 border-primary mb-1 mb-lg-2"
+										>3</span
+									>
+									<span class="fw-bold mb-0">訂購結果</span>
+								</li>
+							</ol>
+
+              <h2 class="fw-bold fs-lg-3 fs-32 mb-5 letter-5 text-center">返老還童-制服聯誼</h2>
+							<div
+								class="mb-7 mb-lg-8 p-2 px-lg-3 py-lg-2 text-warning text-center bg-primary noto-tc-sans fs-lg-16 fs-14 lh-sm"
+							>
+								您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。
+							</div>
+
+							<div class="table-respinsive mb-8 mb-lg-11">
+								<table class="table align-middle">
+									<thead class="d-none">
+										<tr>
+											<th scope="col"></th>
+											<th scope="col"></th>
+										</tr>
+									</thead>
+									<tbody class="border-2 border-end-0 border-start-0 border-bottom-0">
+										<tr>
+											<th scope="row" class="fw-bold text-dark">訂單編號</th>
+											<td class="text-end noto-tc-sans lh-1">892746123</td>
+										</tr>
+										<tr>
+											<th scope="row" class="fw-bold text-dark">票券</th>
+											<td class="text-end noto-tc-sans lh-1">改頭換面票（含大改造）$8000</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<form action="">
+								<div class="text-center mb-5">
+									<img src="../assets/images/sparkler.png" class="d-block w-32 h-32 img-fluid mb-5 mx-auto" alt="" />
+									<h3 class="fw-bold fs-24 letter-5">結帳資訊</h3>
+								</div>
+								<div class="mb-5">
+									<label for="idNumber" class="form-label text-dark lh-1 noto-tc-sans">取票資訊</label>
+									<input
+										type="text"
+										class="form-control border-2 py-2 px-5"
+										id="idNumber"
+										aria-describedby="請輸入身分證字號或護照號碼"
+										placeholder="請輸入身分證字號或護照號碼"
+									/>
+									<div id="idCardHelp" class="form-text">
+										請輸入您的 <span class="text-danger">身分證字號</span> 供取票使用，外籍人士請輸入
+										<span class="text-danger">護照號碼</span>
+									</div>
+								</div>
+								<div class="mb-7 mb-lg-8">
+									<div class="form-text noto-tc-sans text-dark">付款方式</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="payment" id="radio-creditCard" />
+										<label class="form-check-label noto-tc-sans" for="radio-creditCard">信用卡</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="payment" id="radio-atm" />
+										<label class="form-check-label noto-tc-sans" for="radio-atm">ATM虛擬帳號</label>
+									</div>
+								</div>
+								<div class="mb-5">
+									<a href="./payment-step3.html" class="button fw-bold fs-16 fs-lg-20 w-100 mw-lg-416p p-5 py-lg-2 mx-auto">
+										確認訂單並繳費<span id="total_price">$8000</span><span
+											class="icon arrow-right ms-1 w-16 h-16 w-lg-20 h-lg-20 border-start-0 border-end-0"
+											>Go</span
+										>
+									</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<%- include('./layout/footer'); -%>
+
+		<script type="module" src="../main.js"></script>
+	</body>
+</html>
